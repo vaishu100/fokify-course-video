@@ -1,7 +1,7 @@
 import View from './view.js';
 
 import icons from 'url:../../img/icons.svg';
-import { fracty } from 'fracty';
+import fracty from 'fracty';
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
 
@@ -132,7 +132,7 @@ class RecipeView extends View {
 
     <div class="recipe__user-generated ${this._data.key ? '' : 'hidden'}">
     <svg>
-      <use href="${icons}.svg#icon-user"></use>
+      <use href="${icons}#icon-user"></use>
     </svg>
   </div>
     <button class="btn--round btn--bookmark">
